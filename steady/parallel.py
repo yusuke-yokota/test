@@ -69,8 +69,8 @@ for dd in range(10):
       msa=(se21+se22-se11-se12)/(1)#自由度差１
       msb=(se11+se12)/(len(tim)*2-4)#自由度2+2
       F=msa/msb
-#      print(a,b,a2,b2,msa,msb,F,f.ppf(0.05, len(tim)*2-3, len(tim)*2-4))
-      if(F<f.ppf(0.05, len(tim)*2-3, len(tim)*2-4)):
+#      print(a,b,a2,b2,msa,msb,F,f.ppf(0.95, len(tim)*2-3, len(tim)*2-4))
+      if(F<f.ppf(0.95, len(tim)*2-3, len(tim)*2-4)):
         Af.append(F)
      print(rans,1/inte,yloop,diff[dd],len(Af))
 #     print(Af)
